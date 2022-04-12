@@ -4,6 +4,7 @@ dist/
 
 # dependencies
 node_modules/
+elm-stuff/
 
 # logs
 npm-debug.log*

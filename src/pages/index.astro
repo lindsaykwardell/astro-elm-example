@@ -1,0 +1,25 @@
+---
+let initialCount = 5; // Load/prepare initial values in frontmatter
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Elm in Astro 🚀</title>
+</head>
+<body>
+	<div id="elm"></div>
+	<!-- Define available variables, pass in flags -->
+	<script type="module" define:vars={{initialCount}}>
+		// Import Elm program to render
+		import { Elm } from '/src/Main.elm&import'
+
+		// Render it as ususal
+		const root = document.querySelector("#elm")
+		const app = Elm.Main.init({
+			node: root,
+			flags: initialCount // Value from frontmatter
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "astro-elm-example",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.8"
+  },
+  "dependencies": {
+    "vite-plugin-elm": "^2.6.0"
+  }
+}
